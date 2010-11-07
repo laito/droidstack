@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="site_actions">
+		<item>All questions</item>
+		<item>Unanswered</item>
+		<item>Search</item>
+		<item>Tags</item>
+		<item>Users</item>
+		<item>My questions</item>
+		<item>Favorite questions</item>
+		<item>My answers</item>
+		<item>My profile</item>
+	</string-array>
+
+    <string-array name="q_sort_all">
+        <item>Activity</item>
+        <item>Votes</item>
+        <item>Creation</item>
+        <item>Featured</item>
+        <item>Hot</item>
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+    
+    <string-array name="q_sort_unanswered">
+        <item>Creation</item>
+        <item>Votes</item>
+    </string-array>
+    
+    <string-array name="q_sort_search">
+    	<item>Activity</item>
+    	<item>Views</item>
+    	<item>Creation</item>
+    	<item>Votes</item>
+    </string-array>
+    
+    <string-array name="q_sort_user">
+        <item>Activity</item>
+        <item>Views</item>
+        <item>Creation</item>
+        <item>Votes</item>
+    </string-array>
+    
+    <string-array name="q_sort_favorites">
+        <item>Activity</item>
+        <item>Views</item>
+        <item>Creation</item>
+        <item>Added</item>
+        <item>Votes</item>
+    </string-array>
+    
+    <string-array name="q_order">
+    	<item>Descending</item>
+    	<item>Ascending</item>
+    </string-array>
+    
+    <string-array name="a_sort_user">
+        <item>Activity</item>
+        <item>Views</item>
+        <item>Creation</item>
+        <item>Votes</item>
+    </string-array>
+    
+    <string-array name="a_order">
+    	<item>Descending</item>
+    	<item>Ascending</item>
+    </string-array>
+    
+    <string-array name="pagesize_labels">
+    	<item>10 items</item>
+    	<item>20 items</item>
+    	<item>30 items</item>
+    	<item>50 items</item>
+    </string-array>
+    
+    <string-array name="pagesize_values">
+    	<item>10</item>
+    	<item>20</item>
+    	<item>30</item>
+    	<item>50</item>
+    </string-array>
+    
+    <string-array name="interval_labels">
+    	<item>Never</item>
+    	<item>15 minutes</item>
+    	<item>30 minutes</item>
+    	<item>1 hour</item>
+    	<item>6 hours</item>
+    </string-array>
+    
+    <string-array name="interval_values">
+    	<item>0</item>
+    	<item>15</item>
+    	<item>30</item>
+    	<item>60</item>
+    	<item>360</item>
+    </string-array>
+    
+    <string-array name="fontsize_labels">
+    	<item>Small</item>
+    	<item>Medium</item>
+    	<item>Large</item>
+    </string-array>
+    
+    <string-array name="fontsize_values">
+    	<item>1em</item>
+    	<item>1.2em</item>
+    	<item>1.4em</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,149 @@
+<!-- BEGIN: main -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			* { margin: 0; padding: 0; }
+			body {
+				font-size: {FONTSIZE};
+			}
+			p {
+				margin: 10px 0;
+			}
+			code, blockquote {
+				background: #eaeaea;
+			}
+			pre code {
+				display: block;
+			}
+			ul, li {
+				list-style-position: inside;
+			}
+			span.author {
+				color: #07C;
+			}
+			span.author:hover {
+				text-decoration: underline;
+				color: #003C66;
+			}
+			a {
+				color: #07C;
+				text-decoration: none;
+			}
+			div.post {
+				font-size: 1em;
+				padding: 5px;
+			}
+			div.comments {
+				border-top: 1px solid #999;
+			}
+			div.comments div {
+				font-size: 0.9em;
+				border-bottom: 1px solid #CCC;
+				padding: 5px;
+			}
+			span.upvote {
+				font-weight: bold;
+				padding-right: 5px;
+				color: #040;
+			}
+			div.post div.score {
+				float: right;
+				font-size: 2.5em;
+				font-weight: bold;
+				background: url("file:///android_asset/post_score.png") 0 50% no-repeat;
+				padding-left: 25px;
+				margin: 5px 10px 5px 0;
+			}
+			div.post div.author {
+				float: right;
+				padding: 5px 10px;
+				background-color: #E0EAF1;
+				background-position: 10px 50%;
+				background-repeat: no-repeat;
+				margin: 5px;
+			}
+			div.post div.author:hover {
+				outline: solid 5px #FF8000;
+			}
+			div.post div.author img {
+				float: left;
+			}
+			div.post div.author div.name {
+				font-size: 0.9em;
+				color: #07C;
+				margin-left: 46px;
+			}
+			div.post div.author div.rep {
+				font-weight: bold;
+				margin-left: 46px;
+			}
+			div.tags span {
+				display: inline-block;
+				font-size: 0.9em;
+				background-color: #E0EAF1;
+				border-bottom: 1px solid #3E6D8E;
+				border-right: 1px solid #7F9FB6;
+				color: #3E6D8E;
+				margin: 5px 2px 5px 0;
+				padding: 3px 4px;
+			}
+			div.tags span:hover {
+				outline: solid 5px #FF8000;
+			}
+			div.accepted {
+				float: right;
+				width: 38px;
+				height: 39px;
+				background: url("file:///android_asset/accepted.png") 0 0 no-repeat;
+				margin: 5px 10px 5px 0;
+			}
+			div.when {
+				clear: both;
+				text-align: right;
+				font-style: italic;
+				color: #7f7f7f;
+				padding: 3px 0;
+				font-size: 0.8em;
+			}
+		</style>
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<!-- BEGIN: post -->
+		<div class="post">
+			{QBODY}
+			<!-- BEGIN: tags -->
+			<div class="tags">
+				<!-- BEGIN: tag -->
+				<span onclick="window.location.replace('droidstack://questions/all?endpoint={ENDPOINT}&tagged={TAG}')">{TAG}</span>
+				<!-- END: tag -->
+			</div>
+			<!-- END: tags -->
+			<div class="author"
+			     style="background-image: url('http://www.gravatar.com/avatar/{QAHASH}?s=36&d=identicon&r=PG')"
+			     onclick="window.location.replace('droidstack://user?endpoint={ENDPOINT}&uid={QAID}')">
+				<div class="name">{QANAME}</div>
+				<div class="rep">{QAREP}</div>
+			</div>
+			<div class="score">{QSCORE}</div>
+			<!-- BEGIN: accepted -->
+			<div class="accepted"></div>
+			<!-- END: accepted -->
+			<div class="when">{QWHEN}</div>
+		</div>
+		<div class="comments">
+			<!-- BEGIN: comment -->
+			<div>
+				<!-- BEGIN: score -->
+				<span class="upvote">+{CSCORE}</span>
+				<!-- END: score -->
+				{CBODY} &ndash; <span class="author" onclick="window.location.replace('droidstack://user?endpoint={ENDPOINT}&uid={CAID}')">{CAUTHOR}</span>
+			</div>
+			<!-- END: comment -->
+		</div>
+		<!-- END: post -->
+	</body>
+</html>
+<!-- END: main -->
